@@ -6,7 +6,7 @@
 
 ## Description
 
-TODO
+Sample .NET reference application, based on a simplified architecture and Docker.
 
 ## Issues
 
