@@ -17,3 +17,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 - Follow the [naming guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
 - Source code must be documented
 - All features or bug fixes must be tested by one or more tests
+
+## Git Workflow
+
+This project follows the [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
