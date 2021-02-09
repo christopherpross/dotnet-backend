@@ -8,10 +8,6 @@
 
 Sample .NET reference application, based on a simplified architecture and Docker.
 
-## Issues
-
-Please make sure to check for duplicate issues and use the issue templates. Issues not conforming to the guidelines may be closed immediately.
-
 ## Contributing
 
 Please note the [Code of Conduct](https://github.com/matthiashermsen/dotnet-backend/blob/main/CODE_OF_CONDUCT.md).
