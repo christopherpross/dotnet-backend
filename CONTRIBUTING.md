@@ -37,7 +37,7 @@ Each commit message consists of a type, the referenced issue and a message. The 
 an example would be
 
 ```
-fix #28: Don't crash on load
+feat #28: Support multiple file upload
 ```
 
 #### Types
@@ -60,4 +60,5 @@ fix #28: Don't crash on load
 
 ## Development setup
 
-TODO
+- You will need [.Net](https://dotnet.microsoft.com/download)
+- You will need [Docker](https://docs.docker.com/get-docker/)
