@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
+using Persistence.Extensions;
+using Rest.Extensions;
 
 namespace Rest
 {
@@ -17,11 +18,10 @@ namespace Rest
         /// <param name="serviceCollection">The <see cref="IServiceCollection"/> holding the services.</param>
         public void ConfigureServices(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddControllers();
-            serviceCollection.AddSwaggerGen(swaggerGenOptions =>
-            {
-                swaggerGenOptions.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" });
-            });
+            serviceCollection
+                .ConfigurePersistenceServices()
+                .ConfigureRestServices()
+                .AddControllers();
         }
 
         /// <summary>
