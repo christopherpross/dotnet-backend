@@ -10,6 +10,7 @@ Please check if your pull request fulfills the following requirements:
 
 - [ ] The pull request follows the guidelines: https://github.com/matthiashermsen/dotnet-backend/blob/main/CONTRIBUTING.md
 - [ ] Tests for the changes have been added (for bug fixes / features)
+- [ ] The source code is documented
 
 ## Type
 
