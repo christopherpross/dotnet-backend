@@ -21,6 +21,7 @@ What kind of change does this pull request introduce? Please check the one that 
 - [ ] Code style update
 - [ ] Refactoring (no functional changes)
 - [ ] Build related changes
+- [ ] Documentation related changes
 
 ## Impact
 
