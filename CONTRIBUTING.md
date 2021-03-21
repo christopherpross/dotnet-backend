@@ -60,5 +60,8 @@ feat #28: Support multiple file upload
 
 ## Development setup
 
-- You will need [.Net](https://dotnet.microsoft.com/download)
-- You will need [Docker](https://docs.docker.com/get-docker/)
+Things to install:
+
+- [.Net](https://dotnet.microsoft.com/download)
+- [Postgres](https://www.postgresql.org/download/)
+- [Docker](https://docs.docker.com/get-docker/)
