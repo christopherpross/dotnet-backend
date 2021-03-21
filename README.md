@@ -6,7 +6,12 @@
 
 ## Description
 
-Sample .NET reference application, based on a simplified architecture and Docker.
+A sample .NET reference application, based on a simplified architecture. Core features are
+ 
+- EF Core using a Postgres database
+- Swagger documentation
+- JWT authentication
+- Docker support
 
 ## Contributing
 
