@@ -32,6 +32,7 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 #### Types
 
+- build: Changes that affect the build system
 - ci: Changes that affect the CI configuration
 - deps: Changes that affect the external dependencies
 - docs: Documentation only changes
@@ -39,7 +40,7 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 - fix: A bug fix
 - perf: A code change that improves performance
 - refactor: A code change that neither fixes a bug nor adds a feature
-- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- style: Changes that do not affect the meaning of the code
 - test: Adding missing tests or correcting existing tests
 
 ## Pull request guidelines
