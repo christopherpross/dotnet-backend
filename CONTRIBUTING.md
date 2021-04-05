@@ -28,17 +28,7 @@ This project follows the [Gitflow Workflow](https://www.atlassian.com/git/tutori
 
 ## Commit message guidelines
 
-Each commit message consists of a type, the referenced issue and a message. The syntax is
-
-```
-<type> <issue>: <message>
-```
-
-an example would be
-
-```
-feat #28: Support multiple file upload
-```
+This project follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 #### Types
 
