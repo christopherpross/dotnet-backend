@@ -19,7 +19,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 
 - Follow the [coding conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
 - Follow the [naming guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
-- Source code must be documented
+- Source code must be documented. Further information can be found [here](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc)
 - All features or bug fixes must be tested by one or more tests
 
 ## Git Workflow
