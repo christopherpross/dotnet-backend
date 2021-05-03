@@ -28,17 +28,17 @@ namespace Persistence.Tests.UnitTests.RepositoryTests
                 Email = "another_example@domain.com"
             }
         };
-        
+
         /// <summary>
         /// The database context.
         /// </summary>
         private readonly DatabaseContext _databaseContext;
-        
+
         /// <summary>
         /// The instance of <see cref="UsersRepository"/> to test.
         /// </summary>
         private readonly UsersRepository _usersRepository;
-        
+
         /// <summary>
         /// Creates a new instance of <see cref="UsersRepositoryTests"/>.
         /// </summary>
@@ -51,7 +51,7 @@ namespace Persistence.Tests.UnitTests.RepositoryTests
             _databaseContext = new DatabaseContext(dbContextOptions);
             _usersRepository = new UsersRepository(_databaseContext);
         }
-        
+
         /// <inheritdoc />
         public async Task InitializeAsync()
         {
@@ -77,7 +77,7 @@ namespace Persistence.Tests.UnitTests.RepositoryTests
 
             int userAmountFromSeedData = _mockUsers.Count();
             int userAmountFromDatabase = usersFromDatabase.Count();
-            
+
             Assert.True(userAmountFromSeedData == userAmountFromDatabase);
         }
     }

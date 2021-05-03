@@ -25,7 +25,7 @@ namespace Persistence.OptionsValidation
         {
             _logger = logger;
         }
-        
+
         /// <inheritdoc/>
         public ValidateOptionsResult Validate(string name, DatabaseOptions databaseOptions)
         {
@@ -35,23 +35,23 @@ namespace Persistence.OptionsValidation
             {
                 if (string.IsNullOrEmpty(databaseOptions.ConnectionString))
                     throw new ValidationException($"{nameof(databaseOptions.ConnectionString)} is required.");
-                
+
                 _ = new NpgsqlConnectionStringBuilder(databaseOptions.ConnectionString);
             }
             catch (Exception exception)
             {
                 validationFailures.Add(exception.Message);
             }
-            
+
             if (validationFailures.Any())
             {
                 string validationFailureErrorMessage = string.Join(Environment.NewLine, validationFailures);
-                
+
                 _logger.LogError(validationFailureErrorMessage);
-                
+
                 return ValidateOptionsResult.Fail(validationFailures);
             }
-            
+
             return ValidateOptionsResult.Success;
         }
     }

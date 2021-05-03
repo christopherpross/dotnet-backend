@@ -13,7 +13,7 @@ namespace Rest.Tests.UnitTests.ControllerTests
         /// !! TO BE REMOVED !!
         /// </summary>
         private readonly DummyController _dummyController;
-        
+
         /// <summary>
         /// !! TO BE REMOVED !!
         /// </summary>
@@ -30,7 +30,7 @@ namespace Rest.Tests.UnitTests.ControllerTests
         {
             IActionResult actionResult = _dummyController.Test();
             OkObjectResult okObjectResult = actionResult as OkObjectResult;
-            
+
             Assert.True(okObjectResult.Value.Equals("Works"));
         }
     }
