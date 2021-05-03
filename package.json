@@ -1,0 +1,13 @@
+{
+  "name": "dotnet-backend",
+  "description": "<h1 align=\"center\">.Net Backend</h1>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiashermsen/dotnet-backend.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiashermsen/dotnet-backend/issues"
+  },
+  "homepage": "https://github.com/matthiashermsen/dotnet-backend#readme"
+}
