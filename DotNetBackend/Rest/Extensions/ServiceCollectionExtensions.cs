@@ -29,11 +29,11 @@ namespace Rest.Extensions
         {
             ServiceProvider serviceProvider = serviceCollection.BuildServiceProvider();
             IConfiguration configuration = serviceProvider.GetService<IConfiguration>();
-            
+
             IConfigurationSection persistenceConfigurationSection = configuration.GetSection("Persistence");
             IConfigurationSection databaseConfigurationSection = persistenceConfigurationSection.GetSection("Database");
             serviceCollection.Configure<DatabaseOptions>(databaseConfigurationSection);
-        
+
             return serviceCollection;
         }
 

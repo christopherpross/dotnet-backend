@@ -10,7 +10,7 @@ namespace Persistence
         /// The set of <see cref="User"/> entities.
         /// </summary>
         public DbSet<User> Users { get; set; }
-        
+
         /// <summary>
         /// Creates a new instance of <see cref="DatabaseContext"/>.
         /// </summary>

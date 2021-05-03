@@ -17,12 +17,12 @@ namespace Persistence.Tests.UnitTests.OptionsValidationTests
         /// The instance of <see cref="DatabaseOptionsValidator"/> to test.
         /// </summary>
         private readonly DatabaseOptionsValidator _databaseOptionsValidator;
-        
+
         /// <summary>
         /// The <see cref="ILogger"/> mock implementation.
         /// </summary>
         private readonly Mock<ILogger<DatabaseOptionsValidator>> _loggerMock;
-        
+
         /// <summary>
         /// Creates a new instance of <see cref="DatabaseOptionsValidatorTests"/>.
         /// </summary>
@@ -49,7 +49,7 @@ namespace Persistence.Tests.UnitTests.OptionsValidationTests
                     It.IsAny<Func<It.IsAnyType, Exception, string>>()),
                 Times.Once);
         }
-        
+
         /// <summary>
         /// Tests if the validation succeeds on valid options.
         /// </summary>
@@ -64,7 +64,7 @@ namespace Persistence.Tests.UnitTests.OptionsValidationTests
 
             Assert.True(validateOptionsResult == ValidateOptionsResult.Success);
         }
-        
+
         /// <summary>
         /// Tests if the validation fails on invalid options.
         /// </summary>
@@ -73,7 +73,7 @@ namespace Persistence.Tests.UnitTests.OptionsValidationTests
         {
             DatabaseOptions databaseOptions = new DatabaseOptions();
             ValidateOptionsResult validateOptionsResult = _databaseOptionsValidator.Validate(string.Empty, databaseOptions);
-            
+
             Assert.True(validateOptionsResult.Failed);
         }
     }

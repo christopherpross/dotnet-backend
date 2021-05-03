@@ -13,7 +13,7 @@ namespace Rest.Tests.IntegrationTests.ControllerTests
         /// !! TO BE REMOVED !!
         /// </summary>
         private readonly DummyController _dummyController;
-        
+
         /// <summary>
         /// !! TO BE REMOVED !!
         /// </summary>

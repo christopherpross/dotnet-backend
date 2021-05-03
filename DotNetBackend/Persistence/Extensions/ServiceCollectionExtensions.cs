@@ -43,12 +43,12 @@ namespace Persistence.Extensions
                 ServiceProvider serviceProvider = serviceCollection.BuildServiceProvider();
                 IOptionsMonitor<DatabaseOptions> databaseOptionsMonitor = serviceProvider.GetService<IOptionsMonitor<DatabaseOptions>>();
                 DatabaseOptions databaseOptions = databaseOptionsMonitor.CurrentValue;
-                
+
                 dbContextOptionsBuilder
                     .UseNpgsql(databaseOptions.ConnectionString)
                     .UseSnakeCaseNamingConvention();
             });
-        
+
         /// <summary>
         /// Configures the repositories.
         /// </summary>

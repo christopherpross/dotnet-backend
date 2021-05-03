@@ -13,7 +13,7 @@ namespace Persistence.Repositories
         /// The database context used as the data source.
         /// </summary>
         private readonly DatabaseContext _databaseContext;
-        
+
         /// <summary>
         /// Creates a new instance of <see cref="UsersRepository"/>.
         /// </summary>
