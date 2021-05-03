@@ -54,5 +54,6 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 Things to install:
 
 - [.Net](https://dotnet.microsoft.com/download)
+- [NodeJs + npm](https://nodejs.org/en/download/)
 - [Postgres](https://www.postgresql.org/download/)
 - [Docker](https://docs.docker.com/get-docker/)
