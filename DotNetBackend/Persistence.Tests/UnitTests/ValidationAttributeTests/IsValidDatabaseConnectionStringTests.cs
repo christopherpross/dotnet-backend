@@ -22,7 +22,7 @@ namespace Persistence.Tests.UnitTests.ValidationAttributeTests
         {
             IsValidDatabaseConnectionString isValidDatabaseConnectionString = new IsValidDatabaseConnectionString();
             bool validationPassed = isValidDatabaseConnectionString.IsValid(databaseConnectionString);
-            
+
             Assert.Equal(expectedToBeValid, validationPassed);
         }
     }
