@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Persistence.ValidationAttributes;
+
 namespace Persistence.Options
 {
     /// <summary>
@@ -8,6 +11,8 @@ namespace Persistence.Options
         /// <summary>
         /// The database connection string.
         /// </summary>
+        [Required]
+        [IsValidDatabaseConnectionString]
         public string ConnectionString { get; set; }
     }
 }
