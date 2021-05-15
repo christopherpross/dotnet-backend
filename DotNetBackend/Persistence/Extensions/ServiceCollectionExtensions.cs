@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Persistence.Interfaces.Repositories;
 using Persistence.Options;
-using Persistence.OptionsValidation;
 using Persistence.Repositories;
 
 namespace Persistence.Extensions
@@ -30,7 +29,13 @@ namespace Persistence.Extensions
         /// <param name="serviceCollection">The <see cref="IServiceCollection"/> holding the services.</param>
         /// <returns>The configured services.</returns>
         private static IServiceCollection ConfigureOptionValidators(this IServiceCollection serviceCollection)
-            => serviceCollection.AddSingleton<IValidateOptions<DatabaseOptions>, DatabaseOptionsValidator>();
+        {
+            serviceCollection
+                .AddOptions<DatabaseOptions>()
+                .ValidateDataAnnotations();
+
+            return serviceCollection;
+        }
 
         /// <summary>
         /// Configures the database context.
