@@ -16,14 +16,14 @@ namespace Persistence.ValidationAttributes
             try
             {
                 string databaseConnectionString = value?.ToString() ?? string.Empty;
-                
+
                 _ = new NpgsqlConnectionStringBuilder(databaseConnectionString);
             }
             catch (Exception exception)
             {
                 return new ValidationResult(exception.Message);
             }
-            
+
             return ValidationResult.Success;
         }
     }
