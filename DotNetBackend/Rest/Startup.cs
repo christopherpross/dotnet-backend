@@ -19,6 +19,10 @@ namespace Rest
         public void ConfigureServices(IServiceCollection serviceCollection)
         {
             serviceCollection
+                .AddHealthChecks()
+                .AddPersistenceHealthChecks();
+
+            serviceCollection
                 .ConfigurePersistenceServices()
                 .ConfigureRestServices()
                 .AddControllers();
@@ -40,6 +44,7 @@ namespace Rest
             }
 
             applicationBuilder
+                .UseHealthChecks("/health")
                 .UseHttpsRedirection()
                 .UseRouting()
                 .UseAuthorization()
