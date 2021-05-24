@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 namespace Rest
 {
     /// <summary>
-    /// The entry point class of the application.
+    /// The entry point class of the application
     /// </summary>
     public sealed class Program
     {
