@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/matthiashermsen/dotnet-backend#readme",
   "lint-staged": {
-    "*.cs": "dotnet format --include"
+    "*.cs": "dotnet format ./DotNetBackend/DotNetBackend.sln"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
