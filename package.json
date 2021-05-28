@@ -12,7 +12,7 @@
   "homepage": "https://github.com/matthiashermsen/dotnet-backend#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged --relative"
+      "pre-commit": "dotnet restore ./DotNetBackend && dotnet build --no-restore ./DotNetBackend && dotnet test --no-build --verbosity normal ./DotNetBackend && lint-staged --relative"
     }
   },
   "lint-staged": {
