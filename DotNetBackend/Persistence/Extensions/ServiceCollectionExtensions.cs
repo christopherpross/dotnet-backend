@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Persistence.Interfaces.Repositories;
 using Persistence.Options;
-using Persistence.Repositories;
 
 namespace Persistence.Extensions
 {
@@ -20,8 +18,7 @@ namespace Persistence.Extensions
         public static IServiceCollection ConfigurePersistenceServices(this IServiceCollection serviceCollection)
             => serviceCollection
                 .ConfigureOptionValidators()
-                .ConfigureDatabaseContext()
-                .ConfigureRepositories();
+                .ConfigureDatabaseContext();
 
         /// <summary>
         /// Configures the persistence options.
@@ -53,13 +50,5 @@ namespace Persistence.Extensions
                     .UseNpgsql(databaseOptions.ConnectionString)
                     .UseSnakeCaseNamingConvention();
             });
-
-        /// <summary>
-        /// Configures the repositories.
-        /// </summary>
-        /// <param name="serviceCollection">The <see cref="IServiceCollection"/> holding the services.</param>
-        /// <returns>The configured services.</returns>
-        private static IServiceCollection ConfigureRepositories(this IServiceCollection serviceCollection)
-            => serviceCollection.AddTransient<IUsersRepository, UsersRepository>();
     }
 }

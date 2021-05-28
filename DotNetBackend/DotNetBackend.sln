@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest", "Rest\Rest.csproj", "{7099476B-4F07-457B-B637-754AC3A3F279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest.Tests", "Rest.Tests\Rest.Tests.csproj", "{89060750-9E99-4C2A-B7F5-61791425A5AA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{5EFE1F38-D897-4ABA-849F-87B758691148}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.Tests", "Persistence.Tests\Persistence.Tests.csproj", "{B9350FF6-6EA5-43B7-91F0-77B8D6A1A233}"
@@ -18,10 +16,6 @@ Global
 		{7099476B-4F07-457B-B637-754AC3A3F279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7099476B-4F07-457B-B637-754AC3A3F279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7099476B-4F07-457B-B637-754AC3A3F279}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89060750-9E99-4C2A-B7F5-61791425A5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89060750-9E99-4C2A-B7F5-61791425A5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89060750-9E99-4C2A-B7F5-61791425A5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89060750-9E99-4C2A-B7F5-61791425A5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EFE1F38-D897-4ABA-849F-87B758691148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EFE1F38-D897-4ABA-849F-87B758691148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EFE1F38-D897-4ABA-849F-87B758691148}.Release|Any CPU.ActiveCfg = Release|Any CPU
