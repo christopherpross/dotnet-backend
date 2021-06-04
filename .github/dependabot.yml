@@ -1,0 +1,77 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+    target-branch: 'dev'
+    commit-message:
+      prefix: 'deps'
+    reviewers:
+      - 'matthiashermsen'
+      - 'andreashoek'
+      - 'ChaosTh3ori3'
+      - 'Cheshakoneko'
+      - 'christopherpross'
+      - 'Judge84'
+      - 'Raysix93'
+      - 'winterjulian'
+
+  - package-ecosystem: 'nuget'
+    directory: '/DotNetBackend/Persistence'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+    target-branch: 'dev'
+    commit-message:
+      prefix: 'deps'
+    reviewers:
+      - 'matthiashermsen'
+      - 'andreashoek'
+      - 'ChaosTh3ori3'
+      - 'Cheshakoneko'
+      - 'christopherpross'
+      - 'Judge84'
+      - 'Raysix93'
+      - 'winterjulian'
+
+  - package-ecosystem: 'nuget'
+    directory: '/DotNetBackend/Persistence.Tests'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+    target-branch: 'dev'
+    commit-message:
+      prefix: 'deps'
+    reviewers:
+      - 'matthiashermsen'
+      - 'andreashoek'
+      - 'ChaosTh3ori3'
+      - 'Cheshakoneko'
+      - 'christopherpross'
+      - 'Judge84'
+      - 'Raysix93'
+      - 'winterjulian'
+
+  - package-ecosystem: 'nuget'
+    directory: '/DotNetBackend/Rest'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+    target-branch: 'dev'
+    commit-message:
+      prefix: 'deps'
+    reviewers:
+      - 'matthiashermsen'
+      - 'andreashoek'
+      - 'ChaosTh3ori3'
+      - 'Cheshakoneko'
+      - 'christopherpross'
+      - 'Judge84'
+      - 'Raysix93'
+      - 'winterjulian'
