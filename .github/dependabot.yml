@@ -8,7 +8,7 @@ updates:
       - 'dependencies'
     target-branch: 'dev'
     commit-message:
-      prefix: 'deps'
+      prefix: 'build'
     reviewers:
       - 'matthiashermsen'
       - 'andreashoek'
@@ -27,7 +27,7 @@ updates:
       - 'dependencies'
     target-branch: 'dev'
     commit-message:
-      prefix: 'deps'
+      prefix: 'build'
     reviewers:
       - 'matthiashermsen'
       - 'andreashoek'
@@ -46,7 +46,7 @@ updates:
       - 'dependencies'
     target-branch: 'dev'
     commit-message:
-      prefix: 'deps'
+      prefix: 'build'
     reviewers:
       - 'matthiashermsen'
       - 'andreashoek'
@@ -65,7 +65,7 @@ updates:
       - 'dependencies'
     target-branch: 'dev'
     commit-message:
-      prefix: 'deps'
+      prefix: 'build'
     reviewers:
       - 'matthiashermsen'
       - 'andreashoek'
