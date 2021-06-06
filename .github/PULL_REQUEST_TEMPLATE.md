@@ -1,37 +1,35 @@
-## Referenced issue
+<!--
+Please make sure to read the Pull Request Guidelines:
+https://github.com/matthiashermsen/dotnet-backend/blob/main/CONTRIBUTING.md#pull-request-guidelines
+-->
 
-Which issue is referenced by this pull request?
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
 
-The pull request references <!-- #12345 -->
+**What kind of change does this PR introduce?** (check at least one)
 
-## Checklist
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Code style update
+- [ ] Refactor
+- [ ] Build-related changes
+- [ ] Other, please describe:
 
-Please check if your pull request fulfills the following requirements:
+**Does this PR introduce a breaking change?** (check one)
 
-- [ ] The pull request follows the guidelines: https://github.com/matthiashermsen/dotnet-backend/blob/main/CONTRIBUTING.md
+- [ ] Yes
+- [ ] No
 
-If source code has changed:
+If yes, please describe the impact and migration path for existing applications:
 
-- [ ] Tests for the changes have been added (for bug fixes / features)
-- [ ] The source code is documented
+**The PR fulfills these requirements:**
 
-## Type
+- [ ] It's submitted to the `dev` branch, _not_ the `main` branch
+- [ ] When resolving a specific issue, it's referenced in the PR's title
+- [ ] All tests are passing
+- [ ] New/updated tests are included
 
-What kind of change does this pull request introduce? Please check the ones that apply to this pull request:
+If adding a **new feature**, the PR's description includes:
+- [ ] A convincing reason for adding this feature (to avoid wasting your time, it's best to open a suggestion issue first and wait for approval before working on it)
 
-- [ ] Build related changes
-- [ ] CI related changes
-- [ ] Affection of external dependencies
-- [ ] Documentation related changes
-- [ ] Introduction of new Feature(s)
-- [ ] Bug Fix(es)
-- [ ] Performance improvements
-- [ ] Refactoring (no functional changes)
-- [ ] Code style (no functional changes)
-- [ ] Introduction of new/missing tests
-
-## Impact
-
-Does this pull request introduce a breaking change? If yes, please describe:
-
-N/A <!-- Description goes here -->
+**Other information:**
