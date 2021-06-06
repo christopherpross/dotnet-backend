@@ -4,8 +4,8 @@
 <a href="https://github.com/matthiashermsen/dotnet-backend/issues" target="_blank"><img src="https://img.shields.io/github/issues/matthiashermsen/dotnet-backend" alt="Open issues" /></a>
 <a href="https://github.com/matthiashermsen/dotnet-backend/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/matthiashermsen/dotnet-backend" alt="Open pull requests" /></a>
 <img src="https://img.shields.io/github/languages/code-size/matthiashermsen/dotnet-backend" alt="Code size" />
-<img src="https://img.shields.io/github/workflow/status/matthiashermsen/dotnet-backend/run-build-on-main-on-push?label=build" alt="Build" />
-<img src="https://img.shields.io/github/workflow/status/matthiashermsen/dotnet-backend/run-tests-on-main-on-push?label=tests" alt="Tests" />
+<img src="https://img.shields.io/github/workflow/status/matthiashermsen/dotnet-backend/Run%20build%20on%20main%20on%20push?label=build" alt="Build" />
+<img src="https://img.shields.io/github/workflow/status/matthiashermsen/dotnet-backend/Run%20tests%20on%20main%20on%20push?label=tests" alt="Tests" />
 
 ## Description
 
