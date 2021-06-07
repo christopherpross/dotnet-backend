@@ -32,9 +32,8 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 #### Types
 
-- build: Changes that affect the build system
+- build: Changes that affect the build system or external dependencies
 - ci: Changes that affect the CI configuration
-- deps: Changes that affect the external dependencies
 - docs: Documentation only changes
 - feat: A new feature
 - fix: A bug fix
